@@ -6,11 +6,9 @@ on:
       - dev
 
 env:  #global 
-  MONGODB_CLUSTER_ADDRESS: gh-secrets1.ztagxhg.mongodb.net
-  MONGODB_USERNAME: bennytan
-  MONGODB_PASSWORD: 5upp0rt@Ben
+ 
   MONGODB_DB_NAME: gha-demo
-  PORT: 8080
+ 
  
 jobs:
   test:
@@ -29,7 +27,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: npm-deps-${{ hashFiles('**/package-lock.json') }}
+          key: npm-deps-${{ hashFiles('**/package-lock.js  on') }}
       - name: Install dependencies
         run: npm ci
       - name: Run server
