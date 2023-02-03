@@ -15,7 +15,7 @@ jobs:
     env: #local to job env 
       MONGODB_CLUSTER_ADDRESS: gh-secrets1.ztagxhg.mongodb.net
       MONGODB_USERNAME: bennytan
-      MONGODB_PASSWORD: 5upp0rt@Ben
+      MONGODB_PASSWORD: G7ML0GoY6EEQS5l1
       PORT: 8080
 
     environment: testing
